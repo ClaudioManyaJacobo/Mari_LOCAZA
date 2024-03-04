@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Facultads</h1>
+
+<div id="facultads">
+  <% @facultads.each do |facultad| %>
+    <%= render facultad %>
+    <p>
+      <%= link_to "Show this facultad", facultad %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New facultad", new_facultad_path %>
+<%= link_to "Ver Alumnos", alumnos_path, class: "btn btn-secondary" %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @facultad %>
+
+<div>
+  <%= link_to "Edit this facultad", edit_facultad_path(@facultad) %> |
+  <%= link_to "Back to facultads", facultads_path %>
+
+  <%= button_to "Destroy this facultad", @facultad, method: :delete %>
+</div>
